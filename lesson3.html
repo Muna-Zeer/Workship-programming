@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      width: 100%;
+      border-radius: 10px;
+      border-spacing: 3px;
+      margin: 12px;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #d6eeee;
+    }
+    th,
+    td {
+      background-color: #96d4d4;
+      border-collapse: collapse;
+      padding: 14px;
+    }
+    th {
+      text-align: center;
+    }
+    th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+  </style>
+  <body>
+    <!-- nth-child() selector on both th and td elements if you want 
+     to have the styling on both headers and regular table cells -->
+    <table>
+      <caption>
+        students data
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">Student Name</th>
+          <th>Class</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="height: 40px">
+          <td>Ahmad</td>
+          <td>Hasan</td>
+          <td>Fifth</td>
+          <td>Science</td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>Amar</td>
+          <td>Fifth</td>
+          <td>Islamic</td>
+        </tr>
+        <tr>
+          <td>Leen</td>
+          <td>Jamile</td>
+          <td>Fifth</td>
+          <td>Math</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+        <tr>
+          <th>Name</th>
+          <td>Ahmad</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
+      
+  </body>
+</html>
