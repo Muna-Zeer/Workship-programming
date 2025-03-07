@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Example</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .card {
+        width: 250px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        /* box-shadow: 5px 10px 5px rgb(0, 0, 0.7); */
+        transition: box-shadow 0.3s ease-in-out;
+        text-align: center;
+      }
+      .card:hover {
+        box-shadow: 5px 10px 5px rgb(0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Shadow Example</h3>
+      <p>This box has a shadow.</p>
+    </div>
+  </body>
+</html>
